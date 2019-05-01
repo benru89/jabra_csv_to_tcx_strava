@@ -78,8 +78,8 @@ def jabra_converter(summary, trackpoint_data):
 
 def main():
     
-    summary_filename = "C:/Users/r.fernandez/Downloads/workout_summaries.csv"
-    filename = "C:/Users/r.fernandez/Downloads/workout_updates.csv"
+    summary_filename = "workout_summaries.csv"
+    filename = "workout_updates.csv"
 
     p = Parser(summary_filename,filename)
     summary, trackpoint_data = p.get_data()
