@@ -1,5 +1,14 @@
 from jabra_parser import Parser
+from datetime import datetime
+from dateutil import tz
 import datetime
+
+# List of available timezones here:
+# https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+# ex. for US Pacific Time:
+# from_timezone = tz.gettz('America/Los_Angeles')
+from_timezone = tz.gettz('UTC')
+to_timezone = tz.gettz('UTC')
 
 """Define the structure of a valid TCX file. Another parsers aside 
 from the Jabra parser along with a new method for converting
